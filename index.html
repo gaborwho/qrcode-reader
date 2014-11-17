@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8' />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		h1 {
+			font-size: 10px;
+		}
+		body {
+			margin-top: 2%;
+			text-align: center;
+			color: #fff;
+			background-color: #122836;
+		}
+		video { 
+			width: 50%;
+			/*visibility: hidden;*/
+			/*position: absolute;*/
+		}
+		canvas {
+			border: 8px solid #fff;
+			/*display: none;*/
+			/*visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;*/
+		}
+		button {
+			border: none;
+			display: block;
+			padding: 0.5em 1em;
+			margin: 1% auto 0;
+			cursor: pointer;
+			color: #fff;
+			background-color: #9f361b;
+		}
+		button:active { background-color: #e44d26; }
+	</style>
+</head>
+<body>
+	<video id='vcam' autoplay></video>	
+	<!--<canvas style="width: 100%; height: 100%;" id='vis-canvas'></canvas>-->
+	<p id='result'>RESULT</p>
+	<canvas style="" id='qr-canvas'></canvas>
+	<p id='status'>STATUS</p>
+
+
+<script type="text/javascript" src="jsqrcode/src/grid.js"></script>
+<script type="text/javascript" src="jsqrcode/src/version.js"></script>
+<script type="text/javascript" src="jsqrcode/src/detector.js"></script>
+<script type="text/javascript" src="jsqrcode/src/formatinf.js"></script>
+<script type="text/javascript" src="jsqrcode/src/errorlevel.js"></script>
+<script type="text/javascript" src="jsqrcode/src/bitmat.js"></script>
+<script type="text/javascript" src="jsqrcode/src/datablock.js"></script>
+<script type="text/javascript" src="jsqrcode/src/bmparser.js"></script>
+<script type="text/javascript" src="jsqrcode/src/datamask.js"></script>
+<script type="text/javascript" src="jsqrcode/src/rsdecoder.js"></script>
+<script type="text/javascript" src="jsqrcode/src/gf256poly.js"></script>
+<script type="text/javascript" src="jsqrcode/src/gf256.js"></script>
+<script type="text/javascript" src="jsqrcode/src/decoder.js"></script>
+<script type="text/javascript" src="jsqrcode/src/qrcode.js"></script>
+<script type="text/javascript" src="jsqrcode/src/findpat.js"></script>
+<script type="text/javascript" src="jsqrcode/src/alignpat.js"></script>
+<script type="text/javascript" src="jsqrcode/src/databr.js"></script>
+
+<script src='reader.js'></script>
+
+</body>
+</html>
